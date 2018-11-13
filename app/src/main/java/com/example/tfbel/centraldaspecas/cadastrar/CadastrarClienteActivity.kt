@@ -26,7 +26,8 @@ class CadastrarClienteActivity : AppCompatActivity() {
             campoBairroCliente VARCHAR(50),
             campoCidadeCliente VARCHAR(50),
             campoUfCliente VARCHAR(2),
-            campoCepCliente VARCHAR(13),
+            campoCepCliente VARCHAR(9),
+            campoTelefoneCliente VARCHAR(13),
             campoEmailCliente VARCHAR(100));
             """)
 
@@ -43,6 +44,7 @@ class CadastrarClienteActivity : AppCompatActivity() {
         var campoCidadeCliente = findViewById<EditText>(R.id.campoCidadeCliente)
         var campoUfCliente = findViewById<EditText>(R.id.campoUfCliente)
         var campoCepCliente = findViewById<EditText>(R.id.campoCepCliente)
+        var campoTelefoneCliente = findViewById<EditText>(R.id.campoTelefoneCliente)
         var campoEmailCliente = findViewById<EditText>(R.id.campoEmailCliente)
 
         val NomeCliente = campoNomeCliente.text.toString()
@@ -53,6 +55,7 @@ class CadastrarClienteActivity : AppCompatActivity() {
         val CidadeCliente = campoCidadeCliente.text.toString()
         val UFCliente = campoUfCliente.text.toString()
         val CEPCliente = campoCepCliente.text.toString()
+        val TelefoneCliente = campoTelefoneCliente.text.toString()
         val EmailCliente = campoEmailCliente.text.toString()
 
 
@@ -60,9 +63,9 @@ class CadastrarClienteActivity : AppCompatActivity() {
 
         bancocliente.execSQL("""INSERT INTO ClienteDB('campoNomeCliente', 'campoDocumentoCliente',
             'campoEnderecoCliente', 'campoNumEndCliente', 'campoBairroCliente', 'CampoCidadeCliente',
-            'campoUfCliente', 'campoCepCliente', 'campoEmailCliente')
+            'campoUfCliente', 'campoCepCliente', 'campoTelefoneCliente', 'campoEmailCliente')
             VALUES ('&NomeClinete', '&DocumentoCliente', '&EnderecoCliente', '&NumeroEnderecoCliente',
-            '&BairroCliente', '&CidadeCliente', '&UFCliente', '&CEPCliente', '&EmailCliente')
+            '&BairroCliente', '&CidadeCliente', '&UFCliente', '&CEPCliente', '&TelefoneCliente', '&EmailCliente')
             """)
 
         bancocliente.close()
