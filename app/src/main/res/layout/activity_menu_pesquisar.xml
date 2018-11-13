@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".pesquisar.MenuPesquisarActivity">
+
+    <ImageView
+        android:id="@+id/voltarMenuPrincipal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@imagem"
+        android:onClick="voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971"
+        app:srcCompat="@mipmap/voltar" />
+
+    <ImageView
+        android:id="@+id/pesquisarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
+        android:contentDescription="@imagem"
+        android:onClick="pesquisarcliente"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisarFornecedor"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="@+id/pesquisarFornecedor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pcliente" />
+
+    <ImageView
+        android:id="@+id/pesquisarFornecedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@imagem"
+        android:onClick="pesquisarfornecedor"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisarProduto"
+        app:layout_constraintStart_toStartOf="@+id/pesquisarProduto"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisarCliente"
+        app:srcCompat="@mipmap/pfornecedor" />
+
+    <ImageView
+        android:id="@+id/pesquisarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@imagem"
+        android:onClick="pesquisarproduto"
+        app:layout_constraintEnd_toEndOf="@+id/pesquisarPedido"
+        app:layout_constraintStart_toStartOf="@+id/pesquisarPedido"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisarFornecedor"
+        app:srcCompat="@mipmap/pprodutos" />
+
+    <ImageView
+        android:id="@+id/pesquisarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@imagem"
+        android:onClick="pesquisarpedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisarProduto"
+        app:srcCompat="@mipmap/ppedido" />
+</android.support.constraint.ConstraintLayout>

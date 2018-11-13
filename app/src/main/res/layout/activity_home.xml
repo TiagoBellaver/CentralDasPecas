@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/sobre"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@image"
+        android:onClick="about"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013"
+        app:srcCompat="@mipmap/sobre" />
+
+    <ImageView
+        android:id="@+id/logocentral"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="@image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@mipmap/logo" />
+
+    <ImageView
+        android:id="@+id/botaoMenuCadastrar"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@image"
+        android:onClick="menucadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logocentral"
+        app:srcCompat="@mipmap/cadastrar" />
+
+    <ImageView
+        android:id="@+id/botaoMenuPesquisar"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@image"
+        android:onClick="menupesquisa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoMenuCadastrar"
+        app:srcCompat="@mipmap/pesquisar" />
+
+    <ImageView
+        android:id="@+id/botaoMenuAlterar"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@image"
+        android:onClick="menualterar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoMenuPesquisar"
+        app:srcCompat="@mipmap/alterar" />
+
+    <ImageView
+        android:id="@+id/botaoMenuExcluir"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@image"
+        android:onClick="menuexcluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoMenuAlterar"
+        app:srcCompat="@mipmap/excluir" />
+</android.support.constraint.ConstraintLayout>
