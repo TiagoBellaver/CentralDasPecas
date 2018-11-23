@@ -23,4 +23,13 @@ class PesquisarClienteActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    fun pesquisar(view : View){
+        val intent = Intent(this,
+                PesquisarClienteTela::class.java)
+        intent.putExtra("ID", 1)
+
+        startActivity(intent)
+        finish()
+    }
 }
