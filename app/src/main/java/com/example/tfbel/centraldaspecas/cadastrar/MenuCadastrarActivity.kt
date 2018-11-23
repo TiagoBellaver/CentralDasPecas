@@ -30,6 +30,20 @@ class MenuCadastrarActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun cadastrarproduto(view: View){
+        val intent = Intent(this,
+                CadastrarProdutosActivity::class.java)
+
+        startActivity(intent)
+    }
+
+    fun cadastrarpedido(view : View){
+        val intent = Intent(this,
+                CadastrarPedidoActivity::class.java)
+
+        startActivity(intent)
+    }
+
     fun voltar(view : View) {
         val intent = Intent(this,
                 HomeActivity::class.java)

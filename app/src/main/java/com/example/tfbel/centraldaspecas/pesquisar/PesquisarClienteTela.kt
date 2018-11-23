@@ -10,6 +10,7 @@ import android.widget.EditText
 import com.example.tfbel.centraldaspecas.R
 import com.example.tfbel.centraldaspecas.cadastrar.CadastrarClienteActivity
 import com.example.tfbel.centraldaspecas.cadastrar.MenuCadastrarActivity
+import com.example.tfbel.centraldaspecas.excluir.MenuExcluirActivity
 import kotlinx.android.synthetic.main.activity_pesquisar_cliente_tela.*
 
 class PesquisarClienteTela : AppCompatActivity() {
@@ -40,5 +41,13 @@ class PesquisarClienteTela : AppCompatActivity() {
         }
 
         bancocliente.close()
+    }
+
+    fun voltar(view : View) {
+        val intent = Intent(this,
+                MenuPesquisarActivity::class.java)
+
+        startActivity(intent)
+        finish()
     }
 }
