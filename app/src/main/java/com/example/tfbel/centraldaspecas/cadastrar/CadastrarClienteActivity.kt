@@ -64,8 +64,8 @@ class CadastrarClienteActivity : AppCompatActivity() {
         bancocliente.execSQL("""INSERT INTO ClienteDB('campoNomeCliente', 'campoDocumentoCliente',
             'campoEnderecoCliente', 'campoNumEndCliente', 'campoBairroCliente', 'CampoCidadeCliente',
             'campoUfCliente', 'campoCepCliente', 'campoTelefoneCliente', 'campoEmailCliente')
-            VALUES ('&NomeClinete', '&DocumentoCliente', '&EnderecoCliente', '&NumeroEnderecoCliente',
-            '&BairroCliente', '&CidadeCliente', '&UFCliente', '&CEPCliente', '&TelefoneCliente', '&EmailCliente')
+            VALUES ('$NomeCliente', '$DocumentoCliente', '$EnderecoCliente', '$NumeroEnderecoCliente',
+            '$BairroCliente', '$CidadeCliente', '$UFCliente', '$CEPCliente', '$TelefoneCliente', '$EmailCliente')
             """)
 
         bancocliente.close()
