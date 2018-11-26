@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import com.example.tfbel.centraldaspecas.R
 
 class PesquisarFornecedorActivity : AppCompatActivity() {
@@ -18,6 +19,15 @@ class PesquisarFornecedorActivity : AppCompatActivity() {
     fun voltar(view: View){
         val intent = Intent(this,
                 MenuPesquisarActivity::class.java)
+
+        startActivity(intent)
+        finish()
+    }
+
+    fun pesquiser(view: View){
+        val intent = Intent(this,
+                PesquisarFornecedorTela::class.java)
+        intent.putExtra("ID", "campoIDFornecedor")
 
         startActivity(intent)
         finish()
