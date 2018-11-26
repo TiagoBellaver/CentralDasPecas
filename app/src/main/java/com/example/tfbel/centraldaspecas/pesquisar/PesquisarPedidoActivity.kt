@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import com.example.tfbel.centraldaspecas.R
 
 class PesquisarPedidoActivity : AppCompatActivity() {
@@ -18,6 +19,8 @@ class PesquisarPedidoActivity : AppCompatActivity() {
     fun voltar(view : View){
         val intent = Intent(this,
                 MenuPesquisarActivity::class.java)
+
+        intent.putExtra("ID", findViewById<EditText>(R.id.campoPesquisarPedido).text.toString().toInt())
 
         startActivity(intent)
         finish()
