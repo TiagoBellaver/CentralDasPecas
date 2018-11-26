@@ -64,8 +64,8 @@ class CadastrarFornecedorActivity : AppCompatActivity() {
         bancofornecedor.execSQL("""INSERT INTO FornecedorDB('campoNomeFornecedor', 'campoCNPJFornecedor', 'campoEnderecoFornecedor',
              'campoNumEndFornecedor', 'campoBairroFornecedor', 'campoCidadeFornecedor', 'campoUFFornecedor',
              'campoCepFornecedor', 'campoTelefoneFornecedor', 'campoEmailFornecedor')
-              VALUES ('&NomeFornecedor', '&CNPJFornecedor', '&EnderecoFornecedor', '&NumEndFornecedor', '&BairroFornecedor',
-              '&CidadeFornecedor', '&UFFornecedor', '&CepFornecedor', '&TelefoneFornecedor', '&EmailFornecedor')
+              VALUES ('$NomeFornecedor', '$CNPJFornecedor', '$EnderecoFornecedor', '$NumEndFornecedor', '$BairroFornecedor',
+              '$CidadeFornecedor', '$UFFornecedor', '$CepFornecedor', '$TelefoneFornecedor', '$EmailFornecedor')
               """)
         bancofornecedor.close()
         finish()
