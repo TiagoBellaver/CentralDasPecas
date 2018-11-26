@@ -39,7 +39,8 @@
         <activity android:name=".pesquisar.PesquisarClienteTela" />
         <activity android:name=".cadastrar.CadastrarProdutosActivity" />
         <activity android:name=".cadastrar.CadastrarPedidoActivity" />
-        <activity android:name=".pesquisar.PesquisarFornecedorTela"></activity>
+        <activity android:name=".pesquisar.PesquisarFornecedorTela" />
+        <activity android:name=".pesquisar.PesquisarProdutoTela"></activity>
     </application>
 
 </manifest>

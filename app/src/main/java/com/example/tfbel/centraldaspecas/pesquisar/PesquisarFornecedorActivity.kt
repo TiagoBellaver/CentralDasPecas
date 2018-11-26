@@ -27,7 +27,7 @@ class PesquisarFornecedorActivity : AppCompatActivity() {
     fun pesquiser(view: View){
         val intent = Intent(this,
                 PesquisarFornecedorTela::class.java)
-        intent.putExtra("ID", "campoIDFornecedor")
+        intent.putExtra("ID", findViewById<EditText>(R.id.campoPesquisarFornecedor).text.toString().toInt())
 
         startActivity(intent)
         finish()

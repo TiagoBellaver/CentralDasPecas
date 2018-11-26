@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import com.example.tfbel.centraldaspecas.HomeActivity
 import com.example.tfbel.centraldaspecas.R
 
@@ -27,7 +28,7 @@ class PesquisarClienteActivity : AppCompatActivity() {
     fun pesquisar(view : View){
         val intent = Intent(this,
                 PesquisarClienteTela::class.java)
-        intent.putExtra("ID", 1)
+        intent.putExtra("ID", findViewById<EditText>(R.id.campoPesquisarCliente).text.toString().toInt())
 
         startActivity(intent)
         finish()
