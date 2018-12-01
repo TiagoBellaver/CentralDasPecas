@@ -14,6 +14,7 @@ class PesquisarPedidoTela : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisar_pedido_tela)
+        supportActionBar?.hide()
 
         val intent = getIntent()
         val ID = intent.getIntExtra("ID", 0)

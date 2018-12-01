@@ -42,7 +42,9 @@
         <activity android:name=".pesquisar.PesquisarFornecedorTela" />
         <activity android:name=".pesquisar.PesquisarProdutoTela" />
         <activity android:name=".pesquisar.PesquisarPedidoTela" />
-        <activity android:name=".alterar.AlterarClienteTela"></activity>
+        <activity android:name=".alterar.AlterarClienteTela" />
+        <activity android:name=".alterar.AlterarFornecedorTela" />
+        <activity android:name=".alterar.AlterarPedidoTela"></activity>
     </application>
 
 </manifest>
