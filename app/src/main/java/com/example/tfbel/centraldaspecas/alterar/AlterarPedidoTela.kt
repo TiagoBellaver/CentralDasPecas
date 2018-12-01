@@ -32,7 +32,8 @@ class AlterarPedidoTela : AppCompatActivity() {
             findViewById<EditText>(R.id.campoIDPecaDois).text.append(auxiliar.getInt(4).toString())
             findViewById<EditText>(R.id.campoQtdPecaDois).text.append(auxiliar.getInt(5).toString())
             findViewById<EditText>(R.id.campoIDPecaTres).text.append(auxiliar.getInt(6).toString())
-            findViewById<EditText>(R.id.campoValorTotal).text.append(auxiliar.getString(7))
+            findViewById<EditText>(R.id.campoQtdPecaTres).text.append(auxiliar.getInt(7).toString())
+            findViewById<EditText>(R.id.campoValorTotal).text.append(auxiliar.getString(8))
         }
         bancopedido.close()
     }
@@ -65,7 +66,7 @@ class AlterarPedidoTela : AppCompatActivity() {
             campoQtdPecaUm = '$QtdPecaUm',
             campoIDPecaDois =  '$IDPecaDois',
             campoQtdPecaDois = '$QtdPecaDois',
-            campoIDPecaTres =  '$IDPecaTres'
+            campoIDPecaTres =  '$IDPecaTres',
             campoQtdPecaTres = '$QtdPecaTres',
             campoValorTotal = '$ValorTotal'
 

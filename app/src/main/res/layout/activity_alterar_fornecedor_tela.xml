@@ -17,6 +17,7 @@
         android:ems="10"
         android:fontFamily="@font/bebasneuebold"
         android:hint="ID Fornecedor"
+        android:enabled="false"
         android:inputType="number"
         android:singleLine="true"
         android:textColor="@color/colorAccent"

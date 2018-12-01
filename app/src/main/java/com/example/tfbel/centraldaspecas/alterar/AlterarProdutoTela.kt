@@ -23,7 +23,7 @@ class AlterarProdutoTela : AppCompatActivity() {
         global = ID
         var bancoproduto = openOrCreateDatabase("ProdutoDB", Context.MODE_PRIVATE, null)
 
-        val auxiliar = bancoproduto.rawQuery("""SELECT *FROM ProdutoDB WHERE campoIDPRoduto = $ID""", null)
+        val auxiliar = bancoproduto.rawQuery("""SELECT *FROM ProdutoDB WHERE campoIDProduto = $ID""", null)
 
         if(auxiliar.moveToNext()){
             findViewById<EditText>(R.id.campoIDProduto).text.append(auxiliar.getInt(0).toString())

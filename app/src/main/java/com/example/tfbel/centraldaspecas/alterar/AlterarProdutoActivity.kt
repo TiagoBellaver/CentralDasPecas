@@ -17,14 +17,14 @@ class AlterarProdutoActivity : AppCompatActivity() {
 
     fun alterar(view : View) {
         val intent = Intent(this,
-                AlterarClienteTela::class.java)
+                AlterarProdutoTela::class.java)
         intent.putExtra("ID", findViewById<EditText>(R.id.campoAlterarProduto).text.toString().toInt())
 
         startActivity(intent)
         finish()
     }
 
-        fun voltar(view : View) {
+    fun voltar(view : View) {
         val intent = Intent(this,
                 MenuAlterarActivity::class.java)
 

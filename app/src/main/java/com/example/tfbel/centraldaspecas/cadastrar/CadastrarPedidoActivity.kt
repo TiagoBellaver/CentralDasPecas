@@ -57,7 +57,7 @@ class CadastrarPedidoActivity : AppCompatActivity() {
 
         bancopedido.execSQL("""INSERT INTO PedidoDB('campoIDCliente', 'campoIDPecaUm', 'campoQtdPecaUm',
             'campoIDPecaDois', 'campoQtdPecaDois', 'campoIDPecaTres', 'campoQtdPecaTres', 'campoValorTotal')
-            VALUES ('$IDCliente', '$IDPecaUm', '$QtdPecaUm', '$IDPecaDois', '$QtdPecaDois', '$IDPecaTres'
+            VALUES ('$IDCliente', '$IDPecaUm', '$QtdPecaUm', '$IDPecaDois', '$QtdPecaDois', '$IDPecaTres',
              '$QtdPecaTres', '$ValorTotal')""")
 
         bancopedido.close()

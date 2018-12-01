@@ -17,7 +17,7 @@ class CadastrarProdutosActivity : AppCompatActivity() {
 
         var bancoproduto = openOrCreateDatabase("ProdutoDB", Context.MODE_PRIVATE,null)
 
-        bancoproduto.execSQL("""CREATE TABLE IF NOT EXISTS PrdoutoDB(
+        bancoproduto.execSQL("""CREATE TABLE IF NOT EXISTS ProdutoDB(
 
             campoIDProduto INTEGER PRIMARY KEY AUTOINCREMENT,
             campoDescricaoProduto VARCHAR(256),

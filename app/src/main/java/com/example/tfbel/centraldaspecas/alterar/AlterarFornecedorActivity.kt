@@ -17,7 +17,7 @@ class AlterarFornecedorActivity : AppCompatActivity() {
 
     fun alterar(view : View){
         val intent = Intent(this,
-                AlterarClienteTela::class.java)
+                AlterarFornecedorTela::class.java)
         intent.putExtra("ID", findViewById<EditText>(R.id.campoAlterarFornecedor).text.toString().toInt())
 
         startActivity(intent)
