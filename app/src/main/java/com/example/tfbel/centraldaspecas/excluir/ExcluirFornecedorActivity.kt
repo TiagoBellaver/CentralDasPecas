@@ -15,7 +15,6 @@ class ExcluirFornecedorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_excluir_fornecedor)
         supportActionBar?.hide()
-
     }
 
     fun excluir(view: View){

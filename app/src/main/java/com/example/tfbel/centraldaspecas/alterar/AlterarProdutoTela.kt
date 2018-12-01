@@ -12,6 +12,7 @@ import com.example.tfbel.centraldaspecas.cadastrar.MenuCadastrarActivity
 class AlterarProdutoTela : AppCompatActivity() {
 
     var global = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alterar_produto_tela)

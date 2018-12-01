@@ -13,7 +13,6 @@ class MenuPesquisarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_pesquisar)
         supportActionBar?.hide()
-
     }
 
     fun pesquisarcliente(view: View){

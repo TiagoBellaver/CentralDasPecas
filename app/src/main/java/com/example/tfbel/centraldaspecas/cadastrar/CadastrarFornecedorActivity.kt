@@ -71,13 +71,6 @@ class CadastrarFornecedorActivity : AppCompatActivity() {
         finish()
     }
 
-    fun criarfornecedor(view: View){
-        val intent = Intent(this,
-                CadastrarFornecedorActivity::class.java)
-
-        startActivity(intent)
-    }
-
     fun cancelar(view: View){
         val intent = Intent(this,
                 MenuCadastrarActivity::class.java)

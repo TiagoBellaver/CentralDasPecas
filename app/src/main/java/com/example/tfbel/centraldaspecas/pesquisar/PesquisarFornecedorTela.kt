@@ -45,5 +45,4 @@ class PesquisarFornecedorTela : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
 }

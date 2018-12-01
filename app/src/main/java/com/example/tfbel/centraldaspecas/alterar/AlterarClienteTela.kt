@@ -17,6 +17,7 @@ class AlterarClienteTela : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alterar_cliente_tela)
         supportActionBar?.hide()
+
         val intent = getIntent()
         val ID = intent.getIntExtra("ID", 0)
         global = ID
@@ -38,7 +39,6 @@ class AlterarClienteTela : AppCompatActivity() {
             findViewById<EditText>(R.id.campoTelefoneCliente).text.append(auxiliar.getString(9))
             findViewById<EditText>(R.id.campoEmailCliente).text.append(auxiliar.getString(10))
         }
-
         bancocliente.close()
     }
 
@@ -66,7 +66,6 @@ class AlterarClienteTela : AppCompatActivity() {
         val TelefoneCliente = campoTelefoneCliente.text.toString()
         val EmailCliente = campoEmailCliente.text.toString()
 
-
         var bancocliente = openOrCreateDatabase("ClienteDB", Context.MODE_PRIVATE,null)
 
         bancocliente.execSQL("""UPDATE ClienteDB
@@ -82,7 +81,6 @@ class AlterarClienteTela : AppCompatActivity() {
             campoEmailCliente = '$EmailCliente'
 
             WHERE campoIDCliente = '$global'
-
 
             """)
 

@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         Thread(Runnable {
             carregar(progresso)
         }).start()
-
     }
 
     fun carregar(barraProgresso : ProgressBar) {

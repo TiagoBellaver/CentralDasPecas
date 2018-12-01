@@ -13,7 +13,6 @@ class MenuAlterarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_alterar)
         supportActionBar?.hide()
-
     }
 
     fun alterarcliente(view : View) {

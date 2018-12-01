@@ -13,7 +13,6 @@ class AlterarFornecedorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alterar_fornecedor)
         supportActionBar?.hide()
-
     }
 
     fun alterar(view : View){

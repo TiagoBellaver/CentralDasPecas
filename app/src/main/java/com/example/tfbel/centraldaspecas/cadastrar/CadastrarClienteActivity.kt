@@ -72,13 +72,6 @@ class CadastrarClienteActivity : AppCompatActivity() {
         finish()
     }
 
-    fun criarCliente(view: View){
-        val intent = Intent(this,
-                CadastrarClienteActivity::class.java)
-
-        startActivity(intent)
-    }
-
     fun cancelar(view: View){
         val intent = Intent(this,
                 MenuCadastrarActivity::class.java)

@@ -14,7 +14,6 @@ class AlterarPedidoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alterar_pedido)
         supportActionBar?.hide()
-
     }
 
     fun alterar(view : View){

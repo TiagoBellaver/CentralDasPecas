@@ -13,7 +13,6 @@ class PesquisarProdutosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisar_produtos)
         supportActionBar?.hide()
-
     }
 
     fun voltar(view: View){

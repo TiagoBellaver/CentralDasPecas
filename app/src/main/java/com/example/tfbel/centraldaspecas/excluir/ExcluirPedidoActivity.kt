@@ -15,7 +15,6 @@ class ExcluirPedidoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_excluir_pedido)
         supportActionBar?.hide()
-
     }
 
     fun excluir(view: View){

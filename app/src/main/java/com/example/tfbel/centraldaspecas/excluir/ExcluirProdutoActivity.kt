@@ -15,7 +15,6 @@ class ExcluirProdutoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_excluir_produto)
         supportActionBar?.hide()
-
     }
 
     fun excluir(view: View){
@@ -36,5 +35,6 @@ class ExcluirProdutoActivity : AppCompatActivity() {
                 MenuExcluirActivity::class.java)
 
         startActivity(intent)
+        finish()
     }
 }

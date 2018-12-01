@@ -37,7 +37,6 @@ class AlterarFornecedorTela : AppCompatActivity() {
             findViewById<EditText>(R.id.campoTelefoneFornecedor).text.append(auxiliar.getString(9))
             findViewById<EditText>(R.id.campoEmailFornecedor).text.append(auxiliar.getString(10))
         }
-
         bancofornecedor.close()
     }
 
@@ -79,8 +78,8 @@ class AlterarFornecedorTela : AppCompatActivity() {
             campoTelefoneFornecedor = '$TelefoneFornecedor',
             campoEmailFornecedor = '$EmailFornecedor'
 
-
             WHERE campoIDFornecedor = '$global'
+
               """)
 
         bancofornecedor.close()

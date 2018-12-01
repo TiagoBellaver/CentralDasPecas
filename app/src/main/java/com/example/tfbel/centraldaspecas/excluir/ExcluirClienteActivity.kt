@@ -15,7 +15,6 @@ class ExcluirClienteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_excluir_cliente)
         supportActionBar?.hide()
-
     }
 
     fun excluir(view: View){
@@ -38,5 +37,4 @@ class ExcluirClienteActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
 }

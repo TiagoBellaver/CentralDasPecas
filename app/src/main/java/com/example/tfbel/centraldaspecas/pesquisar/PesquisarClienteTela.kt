@@ -19,6 +19,7 @@ class PesquisarClienteTela : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisar_cliente_tela)
         supportActionBar?.hide()
+
         val intent = getIntent()
         val ID = intent.getIntExtra("ID", 0)
         var bancocliente = openOrCreateDatabase("ClienteDB", Context.MODE_PRIVATE, null)
@@ -39,7 +40,6 @@ class PesquisarClienteTela : AppCompatActivity() {
             findViewById<EditText>(R.id.campoTelefoneCliente).text.append(auxiliar.getString(9))
             findViewById<EditText>(R.id.campoEmailCliente).text.append(auxiliar.getString(10))
         }
-
         bancocliente.close()
     }
 

@@ -13,7 +13,6 @@ class MenuExcluirActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_excluir)
         supportActionBar?.hide()
-
     }
 
     fun voltar(view : View) {

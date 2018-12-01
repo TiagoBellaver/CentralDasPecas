@@ -15,7 +15,6 @@ class AlterarClienteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alterar_cliente)
         supportActionBar?.hide()
-
     }
 
     fun voltar(view : View) {

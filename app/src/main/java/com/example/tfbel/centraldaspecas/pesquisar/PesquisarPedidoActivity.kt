@@ -13,13 +13,19 @@ class PesquisarPedidoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisar_pedido)
         supportActionBar?.hide()
-
     }
 
-    fun voltar(view : View){
+    fun voltar(view: View){
         val intent = Intent(this,
                 MenuPesquisarActivity::class.java)
 
+        startActivity(intent)
+        finish()
+    }
+
+    fun pesquisar(view : View){
+        val intent = Intent(this,
+                PesquisarPedidoTela::class.java)
         intent.putExtra("ID", findViewById<EditText>(R.id.campoPesquisarPedido).text.toString().toInt())
 
         startActivity(intent)

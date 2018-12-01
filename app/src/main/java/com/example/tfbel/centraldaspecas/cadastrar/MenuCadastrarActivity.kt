@@ -13,7 +13,6 @@ class MenuCadastrarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_cadastrar)
         supportActionBar?.hide()
-
     }
 
     fun cadastrarcliente(view: View){
